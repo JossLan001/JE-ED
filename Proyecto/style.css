@@ -271,19 +271,21 @@ header {
 
 .Who-are{
     position: relative;
-    right: 200px;
+    bottom: 70px; /*Hacia arriba desplaza el texto*/
+    right: 180px; 
     text-align: left;
     color: white;
 }
 
-.About{
+.About {
+
     font-size: 1em;
     position: relative;
     right: 180px;
     color: white;
-}
+  }
 
-.Aboutme{
+.Aboutme{ /*Imagen*/
 
     position: relative; /*Se puede situar en culaquier parte de la pantalla o fixed*/
     right: 100px;
@@ -291,3 +293,4 @@ header {
     width: 1200px; /*Ancho*/
     
 }
+
