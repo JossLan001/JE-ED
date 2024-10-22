@@ -172,30 +172,137 @@ li a:hover:not(.active){
 }
 
 
+/*listado 1 test*/
 .Filters-Ge{
 
     position: relative;
     bottom: -450px;
     left: auto;
     float: left;
-    max-width: 200px; /*Max del ancho*/
+    max-width: 200px;
     width: 14%;
     margin:  150px auto 30px;
-    z-index: 1;
+}
+
+.Filters-G{
+
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.Filters-G .Filters-Gen{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
 
 }
 
-/* position: absolute;
-    bottom: -190px;
-    left: auto;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 14%;
-    height: 100%;
+.Filters-G .Icon-Gen{
+
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.Filters-G.open .Icon-Gen{
+    transform: rotate(-180deg);
+}
+
+.list1{
+
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+
+}
+
+.Filters-G.open ~ .list1{
+    
+    display: block;
+
+}
+
+.list1 .item1{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+   
+}
+
+.list1 .item1:hover{
+    background-color: gray;
+
+}
+
+.item1 .item-text1{
     font-size: 15px;
-    overflow: auto;
-    z-index: auto; */
+    font-weight: 400;
+    color: black;
+}
+
+.item1 .checkbox1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.item1.checked .checkbox1{
+    background-color: black;
+    border-color: black;
+}
+
+.checkbox1 .check-icon{
+
+    color: white;
+    font-size: 11px;
+    transform: scale(0); 
+}
+
+.item1.checked .check-icon{
+    transform: scale(1);
+}
+
+/*Listado bueno*/
+/* .Filters-Ge{
+
+    position: relative;
+    bottom: -450px;
+    left: auto;
+    float: left;
+    max-width: 200px;
+    width: 14%;
+    margin:  150px auto 30px;
+    z-index: 1;
+}
 
 .Filters-G{
 
@@ -263,8 +370,6 @@ li a:hover:not(.active){
     transition: 0.3s;
     padding: 0 15px;
     border-radius: 8px;
-    /* height: 30px; */
-
 }
 
 
@@ -301,15 +406,139 @@ li a:hover:not(.active){
 
     color: white;
     font-size: 11px;
-    transform: scale(0); /*Quitamos la palomita del checkbox*/
+    transform: scale(0);
 
 }
 
 .item.checked .check-icon{
     transform: scale(1);
+} */
+
+
+/*Listado 2*/
+.Filters-Ch{
+
+    position: relative;
+    bottom: -705px;
+    left: -200px;
+    float: left;
+    max-width: 200px;
+    width: 14%;
+    margin:  150px auto 30px;
+
+}
+
+.Filters-Chi{
+
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.Filters-Chi .Filters-Child{
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+
+}
+
+.Filters-Chi .Icon-Child{
+
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.Filters-Chi.open .Icon-Child{
+    transform: rotate(-180deg);
+}
+
+.list2{
+
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+
+}
+
+.Filters-Chi.open ~ .list2{
+    
+    display: block;
+
+}
+
+.list2 .item2{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+.list2 .item2:hover{
+    background-color: gray;
+
+}
+
+.item2 .item-text2{
+
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
+.item2 .checkbox2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.item2.checked .checkbox2{
+    background-color: red;
+    border-color: black;
+}
+
+.checkbox2 .check-icon{
+
+    color: white;
+    font-size: 11px;
+    transform: scale(0); 
+
+}
+
+.item2.checked .check-icon{
+    transform: scale(1);
 }
 
 
+/*SECCION DE LA GALERIA*/
 .galeria{
 
     position: absolute;
