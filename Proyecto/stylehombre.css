@@ -520,7 +520,7 @@ li a:hover:not(.active){
     transition: all 0.3s ease-in-out;
 }
 
-.item2.checked .checkbox2{
+.item2.checked2 .checkbox2{
     background-color: black;
     border-color: black;
 }
