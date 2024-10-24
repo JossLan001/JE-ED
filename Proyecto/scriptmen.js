@@ -32,12 +32,12 @@ FiltersC.addEventListener("click", () =>{
 
 item2C.forEach(item =>{
     item.addEventListener("click", () => {
-        item.classList.toggle("checked2");
+        item.classList.toggle("checked");
     
-        let checked2 = document.querySelectorAll(".checked2"),
+        let checked = document.querySelectorAll(".checked"),
             FiltersChi = document.querySelector(".Filters-Child");
 
-        if (checked2 && checked2.length > 0){
+        if (checked && checked.length > 0){
                 FiltersChi.innerText = `${checked2.length} Selected`;
         }else{
                 FiltersChi.innerText = "Niños";

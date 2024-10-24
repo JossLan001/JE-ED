@@ -521,7 +521,7 @@ li a:hover:not(.active){
 }
 
 .item2.checked .checkbox2{
-    background-color: red;
+    background-color: black;
     border-color: black;
 }
 
