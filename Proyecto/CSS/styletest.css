@@ -12,7 +12,15 @@ body{
 }
 
 
+.Orders{
+    position: relative;
+    top: 100px;
+    float: left;
+    left: 100px;
+}
 
+
+/* 
 .Filters-Ge{
 
     position: relative;
@@ -253,7 +261,7 @@ body{
 .item2.checked .check-icon{
     transform: scale(1);
 }
-
+ */
 
 
 /* .Filters-Spt{

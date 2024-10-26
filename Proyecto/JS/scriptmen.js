@@ -34,11 +34,11 @@ item2C.forEach(item2 =>{
     item2.addEventListener("click", () => {
         item2.classList.toggle("checked");
     
-        let checked = document.querySelectorAll(".checked"),
+        let checked2 = document.querySelectorAll(".checked2"),
             FiltersChi = document.querySelector(".Filters-Child");
 
-        if (checked && checked.length > 0){
-                FiltersChi.innerText = `${checked.length} Selected`;
+        if (checked2 && checked2.length > 0){
+                FiltersChi.innerText = `${checked2.length} Selected`;
         }else{
                 FiltersChi.innerText = "Precio";
         }

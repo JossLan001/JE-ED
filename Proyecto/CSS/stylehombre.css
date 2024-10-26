@@ -129,12 +129,14 @@ header { /*Barra negra*/
     width: auto;
     right: 200px;
     float: right;
-    background-color: red;
-    color: white;
+    background-color: transparent;
+    color: black;
     padding: 15px;
-    border: 1px solid transparent;
+    border-radius: 15px;
+    border: 2px solid black;
     align-items: center;
     font-size: 13px;   
+    cursor: pointer;
 }
 
 .Orders{
@@ -144,10 +146,12 @@ header { /*Barra negra*/
     width: auto;
     right: 50px;
     float: right;
-    background-color: red;
-    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+    color: black;
     padding: 15px;
-    border: 1px solid transparent;
+    border: 2px solid black;
     align-items: center;
     font-size: 13px;   
 }
