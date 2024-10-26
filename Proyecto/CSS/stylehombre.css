@@ -122,6 +122,36 @@ header { /*Barra negra*/
     font-size: 15px;
 }
 
+.Filters{
+
+    position: absolute;
+    top: 100px;
+    width: auto;
+    right: 200px;
+    float: right;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: 1px solid transparent;
+    align-items: center;
+    font-size: 13px;   
+}
+
+.Orders{
+
+    position: absolute;
+    top: 100px;
+    width: auto;
+    right: 50px;
+    float: right;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: 1px solid transparent;
+    align-items: center;
+    font-size: 13px;   
+}
+
   .Menulateral ul{
 
     position: absolute;
@@ -533,7 +563,7 @@ li a:hover:not(.active){
 
 }
 
-.item2.checked .check-icon{
+.item2.checked2 .check-icon{
     transform: scale(1);
 }
 

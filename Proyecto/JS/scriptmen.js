@@ -10,7 +10,7 @@ items.forEach(item =>{
         item.classList.toggle("checked");
     
         let checked = document.querySelectorAll(".checked"),
-            FiltersGen = document.querySelector(".Filters-Gen");
+            FiltersGen = document.querySelector(".Filters-Gen"); /*Nombre el que yo quiera*/
 
         if (checked && checked.length > 0){
                 FiltersGen.innerText = `${checked.length} Selected`;
@@ -30,17 +30,17 @@ FiltersC.addEventListener("click", () =>{
     FiltersC.classList.toggle("open");
 });
 
-item2C.forEach(item =>{
-    item.addEventListener("click", () => {
-        item.classList.toggle("checked");
+item2C.forEach(item2 =>{
+    item2.addEventListener("click", () => {
+        item2.classList.toggle("checked");
     
         let checked = document.querySelectorAll(".checked"),
             FiltersChi = document.querySelector(".Filters-Child");
 
         if (checked && checked.length > 0){
-                FiltersChi.innerText = `${checked2.length} Selected`;
+                FiltersChi.innerText = `${checked.length} Selected`;
         }else{
-                FiltersChi.innerText = "Niños";
+                FiltersChi.innerText = "Precio";
         }
 
     });
