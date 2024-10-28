@@ -276,6 +276,21 @@ header {
     text-decoration: underline;
 }
 
+.Who-are{
+    position: relative;
+    padding: 10px;
+    top: 100px;
+    border: 2px solid black;
+}
+
+.About{
+    position: relative;
+    width: 50%;
+    top: 150px;
+    border: 2px solid rebeccapurple;
+    padding: 10px;
+
+}
 
 .image{
     position: relative;
