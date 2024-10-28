@@ -10,7 +10,7 @@ items.forEach(item =>{
         item.classList.toggle("checked");
     
         let checked = document.querySelectorAll(".checked"),
-            FiltersGen = document.querySelector(".Filters-Gen"); /*Nombre el que yo quiera*/
+            FiltersGen = document.querySelector(".Filters-Gen");
 
         if (checked && checked.length > 0){
                 FiltersGen.innerText = `${checked.length} Selected`;
