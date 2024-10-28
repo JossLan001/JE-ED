@@ -276,27 +276,12 @@ header {
     text-decoration: underline;
 }
 
-.Who-are{
-    position: relative;
-    padding: 10px;
-    top: 100px;
-    border: 2px solid black;
-}
-
-.About{
-    position: relative;
-    width: 50%;
-    top: 150px;
-    border: 2px solid rebeccapurple;
-    padding: 10px;
-
-}
 
 .image{
-    position: relative;
-    bottom: -200px;
+    position: absolute;
+    bottom: 50px;
     float: left;
-    left: 0;
+    left: 30px;
     display: flex;
     width: 1400px;
     height: 500px;
@@ -309,7 +294,7 @@ header {
     opacity: .8;
     transition: .3s ease;
     /* border: 1px solid black; */
-
+    
 }
 
 .image img:hover{
@@ -317,5 +302,52 @@ header {
     width: 100px;
     opacity: 1;
     filter: contrast(120%);
+    
+}
+
+.Text{
+    position: absolute;
+    top: 650px;
+    width: 97%;
+    float: left;
+    left: 25px;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+
+
+
+
+.Who-are{
+
+    position: absolute;
+    top: 850px;
+    padding: 10px;
+    width: 100%;
+    float: left;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.About{
+    position: absolute;
+    top: 950px;
+    padding: 10px;
+    width: 100%;
+    float: left;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
 
 }
