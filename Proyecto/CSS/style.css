@@ -292,13 +292,12 @@ header {
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
-    transition: .3s ease;
-    /* border: 1px solid black; */
-    
+    transition: .2s ease;
+    border: 4px solid white;
 }
 
 .image img:hover{
-    cursor: crosshair;
+    cursor: pointer;
     width: 100px;
     opacity: 1;
     filter: contrast(120%);
@@ -308,25 +307,37 @@ header {
 .Text{
     position: absolute;
     top: 650px;
-    width: 97%;
+    width: auto;
     float: left;
-    left: 25px;
+    left: 40%;
     color: black;
     text-align: center;
     font-size: 40px;
     background-color: transparent;
     padding: 10px;
+    border: 1px solid black;
+    box-shadow: 60px -16px black;
 }
 
 .slider-box{
+
     position: relative;
     float: left;
     left: 45px;
     top: 750px;
     width: 1360px;
     height: 600px;
-    margin: 5px auto 0;
+    /* margin: 0 auto 0; */
     overflow: hidden;
+
+    /*
+    position: relative;
+    top: 800px;
+    float: left;
+    left: 0;
+    width: 723.43px;
+    height: 502.38px; */
+
 
 }
 
@@ -334,13 +345,14 @@ header {
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 50s infinite alternate ease-in-out;
 }
 
 .slider-box li{
     width: 100%;
     list-style: none;
     position: relative;
+    object-fit: contain;
 }
 
 .texto{
@@ -377,14 +389,12 @@ header {
     opacity: 1;
 }
 .slider-box img{
-    height: 100%;
+    object-fit: fill;
+    height: 65%;
     width: 100%;
     
 }
 
-.cover{
-    object-fit: cover;
-}
 
 @keyframes slide {
     0% {margin-left: 0;}
@@ -406,8 +416,8 @@ header {
     top: 800px;
     float: left;
     left: 0;
-    width: 723px;
-    height: 502px;
+    width: 723.43px;
+    height: 502.38px;
 
 }
 
@@ -458,8 +468,8 @@ header {
     top: 800px;
     float: right;
     right: 0;
-    width: 723px;
-    height: 502px;
+    width: 723.43px;
+    height: 502.38px;
 
 }
 
@@ -511,8 +521,8 @@ header {
     top: 800px;
     float: right;
     right: 0;
-    width: 723px;
-    height: 502px;
+    width: 723.43px;
+    height: 502.38px;
 
 }
 
@@ -563,8 +573,8 @@ header {
     top: 800px;
     float: right;
     right: 0;
-    width: 723px;
-    height: 502px;
+    width: 723.43px;
+    height: 502.38px;
 
 }
 
@@ -609,7 +619,12 @@ header {
     color: white;
 }
 
-.Who-are{
+
+
+
+/* Style the footer */
+ 
+/* .Who-are{
 
     position: absolute;
     top: 2000px;
@@ -622,7 +637,7 @@ header {
     align-items: center;
     color: white;
     background-color: black;
-}
+} */
 
 .About{
     position: absolute;
@@ -636,5 +651,11 @@ header {
     align-items: center;
     background-color: black;
     color: white;
+}
+
+.About .inf{
+    justify-content: space-between;
+    column-count: 3;
 
 }
+
