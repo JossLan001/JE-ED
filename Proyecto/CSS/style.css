@@ -277,14 +277,178 @@ header {
 }
 
 
+
+
+
+/* Hola */
+div, fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+.cajabuscar {  /*Nombre de la clase */
+    /*Parametros de la caja */
+     position: absolute;
+     top: 80px;
+     right: 50px;
+     width: 100%;
+     max-width: 300px;
+     margin-bottom: 25px;
+     margin-top: 29px;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+     text-align: right;
+     border-radius: 20px;
+ }
+
+ #buscarform {
+     padding: 0;
+     float: left;
+     clear: both;
+     width: 100%;
+     position: relative;
+     
+ }
+ #buscarform fieldset { float: left }
+
+/*#buscarform .search {  Parametros del espacio donde esta el boton buscar  */
+     /* font-size: 40px;
+     top: 0px;
+     position: absolute;
+     right: 0;
+     padding: 9px;
+     height: 22px;
+     width: 24px;
+     background-color: red;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border: 1px solid black;
+ } */
+ #buscarform fieldset { width: 100% }
+
+  #s {  /* Caja de buscar */
+     width: 100%;
+     float: left;
+     padding: 8px 0;
+     text-indent: 10px;
+     color: black;
+     border: 1px solid black; 
+     box-sizing: border-box;
+     background-color: transparent;
+     border-radius: 20px;
+     height: 35px;
+     text-align: left;
+ }
+
+ .button{    /*boton */
+     top: 0;
+     padding: 1px 1px;
+     float: right;
+     right: 0;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     width: 40px;
+     height: 35px;
+     cursor: pointer;
+     color: black;
+     transition: all 0.25s linear;
+     background-color: transparent;
+     border: 1px solid black;
+     z-index: 10;
+     position: absolute;
+     vertical-align: top;
+ }
+
+.icon-search{
+    position: absolute;
+    top: 10px;
+    float: right;
+    right: 10px;
+
+}
+
+/* Parte buena */
+
+/* .Search{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+.Search input{
+    position: absolute;
+    right: 70px;
+    padding: 0 6px;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Search label{
+    position: relative;
+    top: 5px;
+    right: 120px;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    
+}
+
+.Search .icon-search{
+    position: relative;
+    float: right;
+    right: 40px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 4px;
+    z-index: 1;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+    
+}
+
+.Search .icon-search:hover{
+    background-color: black;
+    color: white;
+} */
+
+.Home{
+    
+    position: absolute;
+    top: 170px;
+    float: left;
+    left: 500px;
+    height: auto;
+    font-size: 20px;
+    /* background-color: rgb(201, 201, 201); */
+    color: black;
+    width: auto;
+    text-align: center;
+
+}
+
+
 .image{
     position: absolute;
-    bottom: 50px;
+    top: 230px;
     float: left;
     left: 0;
     display: flex;
-    width: 1446px;
-    height: 502px;
+    width: 100%;
+    height: 500px;
 }
 
 .image img{
@@ -292,8 +456,9 @@ header {
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
-    transition: .2s ease;
-    border: 4px solid white;
+    /* filter: blur(0.6px); */
+    transition: .4s ease;
+    border: 5px solid white;
 }
 
 .image img:hover{
@@ -301,12 +466,12 @@ header {
     width: 100px;
     opacity: 1;
     filter: contrast(120%);
-    
 }
 
-.Text{
+
+.Tendence{
     position: absolute;
-    top: 650px;
+    top: 750px;
     width: auto;
     float: left;
     left: 40%;
@@ -315,36 +480,31 @@ header {
     font-size: 40px;
     background-color: transparent;
     padding: 10px;
-    border: 1px solid black;
-    box-shadow: 60px -16px black;
+    /* border: 1px solid black; */
+    /* box-shadow: 60px -16px black; */
+
+   
 }
+
+
+/* Slider cambiante */
 
 .slider-box{
 
-    position: relative;
+    position: absolute;
     float: left;
     left: 45px;
-    top: 750px;
+    top: 850px;
     width: 1360px;
     height: 600px;
-    /* margin: 0 auto 0; */
     overflow: hidden;
-
-    /*
-    position: relative;
-    top: 800px;
-    float: left;
-    left: 0;
-    width: 723.43px;
-    height: 502.38px; */
-
-
 }
+
 
 .slider-box ul{
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 500%;
     animation: slide 50s infinite alternate ease-in-out;
 }
 
@@ -389,31 +549,49 @@ header {
     opacity: 1;
 }
 .slider-box img{
-    object-fit: fill;
-    height: 65%;
+    object-fit: cover;
+    height: 70%;
     width: 100%;
     
 }
-
 
 @keyframes slide {
     0% {margin-left: 0;}
     20% {margin-left: 0;}
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    21% {margin-left: -100%;}
+    40% {margin-left: -100%;}
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    41% {margin-left: -200%;}
+    60% {margin-left: -200%;}
 
-    75% {margin-left: -300%;}
-    100% {margin-left: -300;}
+    61% {margin-left: -300%;}
+    80% {margin-left: -300%;}
+
+    81% {margin-left: -400%;}
+    100% {margin-left: -400%;}
 }
+
+
+.Text-top{
+    position: absolute;
+    top: 1550px;
+    width: 100%;
+    height: 15%;
+    float: left;
+    left: 0;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    padding: 20px ;
+}
+
 
 .images1{
 
     position: relative;
-    top: 800px;
+    top: 1000px;
     float: left;
     left: 0;
     width: 723.43px;
@@ -465,7 +643,7 @@ header {
 .images2{
 
     position: relative;
-    top: 800px;
+    top: 1000px;
     float: right;
     right: 0;
     width: 723.43px;
@@ -518,7 +696,7 @@ header {
 .images3{
 
     position: relative;
-    top: 800px;
+    top: 1000px;
     float: right;
     right: 0;
     width: 723.43px;
@@ -570,7 +748,7 @@ header {
 .images4{
 
     position: relative;
-    top: 800px;
+    top: 1000px;
     float: right;
     right: 0;
     width: 723.43px;
@@ -592,6 +770,7 @@ header {
     bottom: 100px;
     padding: 10px 10px;
     width: auto;
+    height: auto;
     color: white;
     background-color: rgba(37, 36, 36, 0.5);
     z-index: 99;
@@ -641,7 +820,7 @@ header {
 
 .About{
     position: absolute;
-    top: 2600px;
+    top: 3000px;
     padding: 10px;
     width: 100%;
     float: left;
@@ -651,11 +830,5 @@ header {
     align-items: center;
     background-color: black;
     color: white;
-}
-
-.About .inf{
-    justify-content: space-between;
-    column-count: 3;
-
 }
 

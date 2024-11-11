@@ -388,3 +388,31 @@ body{
     color: black;
     background-color: white;
 }
+
+
+
+
+
+
+
+
+.slider{
+
+    position: relative;
+    float: left;
+    left: 45px;
+    top: 750px;
+    width: 1360px;
+    height: 600px;
+    overflow: hidden;
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px gray;
+    animation: slider 10s linear infinite;
+}
+
+@keyframes slider{
+    0%{background-image: url(/Pictures/MEN/Calzado/2.jpg) ;}
+    30%{background-image: url(/Pictures/MEN/Calzado/3.jpg) ;}
+    60%{background-image: url(/Pictures/MEN/Calzado/4.jpg) ;}
+    100%{background-image: url(/Pictures/MEN/Calzado/5.jpg) ;}
+}
