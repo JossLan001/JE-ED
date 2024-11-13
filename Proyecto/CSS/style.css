@@ -278,6 +278,7 @@ header {
 }
 
 
+<<<<<<< HEAD
 /* Çolor bsucador
 .Box{
     position: absolute;
@@ -289,21 +290,36 @@ header {
 
 
 /* Buscador */
+=======
+
+
+
+/* Hola */
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
 div, fieldset{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
+<<<<<<< HEAD
 
 }
 
 
+=======
+}
+
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
 .cajabuscar {  /*Nombre de la clase */
     /*Parametros de la caja */
      position: absolute;
      top: 80px;
+<<<<<<< HEAD
      right: 30px;
+=======
+     right: 50px;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
      width: 100%;
      max-width: 300px;
      margin-bottom: 25px;
@@ -317,7 +333,11 @@ div, fieldset{
 
  #buscarform {
      padding: 0;
+<<<<<<< HEAD
      float:left;
+=======
+     float: left;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
      clear: both;
      width: 100%;
      position: relative;
@@ -479,7 +499,10 @@ div, fieldset{
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
 .Tendence{
     position: absolute;
     top: 750px;
@@ -497,6 +520,7 @@ div, fieldset{
    
 }
 
+<<<<<<< HEAD
 .Tendence .tendence-1{
     color: white;
     width: 50%;
@@ -506,6 +530,8 @@ div, fieldset{
     
 }
 
+=======
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
 
 /* Slider cambiante */
 
@@ -595,11 +621,19 @@ div, fieldset{
 
 .Text-top{
     position: absolute;
+<<<<<<< HEAD
     top: 1500px;
     width: auto;
     height: 15%;
     float: left;
     left: 30%;
+=======
+    top: 1550px;
+    width: 100%;
+    height: 15%;
+    float: left;
+    left: 0;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
     color: white;
     text-align: center;
     font-size: 40px;
@@ -611,7 +645,11 @@ div, fieldset{
 .images1{
 
     position: relative;
+<<<<<<< HEAD
     top: 1700px;
+=======
+    top: 1000px;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
     float: left;
     left: 0;
     width: 723.43px;
@@ -663,7 +701,11 @@ div, fieldset{
 .images2{
 
     position: relative;
+<<<<<<< HEAD
     top: 1700px;
+=======
+    top: 1000px;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
     float: right;
     right: 0;
     width: 723.43px;
@@ -716,7 +758,11 @@ div, fieldset{
 .images3{
 
     position: relative;
+<<<<<<< HEAD
     top: 1700px;
+=======
+    top: 1000px;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
     float: right;
     right: 0;
     width: 723.43px;
@@ -768,7 +814,11 @@ div, fieldset{
 .images4{
 
     position: relative;
+<<<<<<< HEAD
     top: 1700px;
+=======
+    top: 1000px;
+>>>>>>> ce8761a2d0c2692bfab097551a3d0ed2649c2475
     float: right;
     right: 0;
     width: 723.43px;
