@@ -14,8 +14,8 @@ body {
     min-height: 100vh;
     background-color: white;
     /* background: url('/Proyecto/WLP/ropa.jpg') no-repeat;
-    background-size: cover;
-    background-position: center; */
+    background-size: cover;*/
+    /* background-position: center; */
 }
 
 header {
@@ -279,8 +279,7 @@ header {
 
 
 
-
-/* Hola */
+/* ESTA SECCION ES DEL BUSCADOR */
 div, fieldset{
     margin: 0;
     padding: 0;
@@ -368,67 +367,14 @@ div, fieldset{
     top: 10px;
     float: right;
     right: 10px;
-
 }
 
-/* Parte buena */
 
-/* .Search{
-    position: absolute;
-    top: 100px;
-    right: 20px;
-}
-
-.Search input{
-    position: absolute;
-    right: 70px;
-    padding: 0 6px;
-    width: 200px;
-    height: 30px;
-    font-size: 14px;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.Search label{
-    position: relative;
-    top: 5px;
-    right: 120px;
-    text-align: center;
-    font-size: 1em;
-    color: black;
-    
-}
-
-.Search .icon-search{
-    position: relative;
-    float: right;
-    right: 40px;
-    height: 30px;
-    font-size: 20px;
-    padding: 5px 4px;
-    z-index: 1;
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-    cursor: pointer;
-
-
-    
-}
-
-.Search .icon-search:hover{
-    background-color: black;
-    color: white;
-} */
 
 .Home{
     
     position: absolute;
-    top: 170px;
+    top: 190px;
     float: left;
     left: 500px;
     height: auto;
@@ -437,13 +383,116 @@ div, fieldset{
     color: black;
     width: auto;
     text-align: center;
-
 }
 
 
-.image{
+video{
     position: absolute;
-    top: 230px;
+    top: 250px;
+    left: 20px;
+    width: 1400px; /* Ajusta el ancho según sea necesario */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+  .Shop p {
+    position: absolute;
+    top: 770px;
+    float: left;
+    left: 30px;
+    padding: 10px 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    
+  }
+
+
+  .image-container {
+    position: absolute;
+    top: 1030px;
+    width: 1400px;
+    float: left;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    /* position: absolute;
+   
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 500px; */
+
+
+  }
+  
+  .image-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    
+  }
+  
+  .image-item img {
+    
+    width: 80%;
+    height: 500px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .4s ease;
+    border: 5px solid white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 440px;
+    float: left;
+    left: 10px;
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+  
+  .image-item:hover img {
+     
+    transform: scale(1.05); 
+    opacity: 1;
+    filter: contrast(120%);
+
+  }
+
+  .image-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay:hover{
+    background-color: white;
+    color: black;
+  }
+
+/* .image{
+    position: absolute;
+    top: 1030px;
     float: left;
     left: 0;
     display: flex;
@@ -456,7 +505,6 @@ div, fieldset{
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
-    /* filter: blur(0.6px); */
     transition: .4s ease;
     border: 5px solid white;
 }
@@ -468,22 +516,57 @@ div, fieldset{
     filter: contrast(120%);
 }
 
+.Compra{
+    
+    position: absolute;
+    top: 10px;
+    float: left;
+    padding: 10px 10px;
+    left: 20px;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    border: 2px solid black;    
+    cursor: pointer;
+    
+}
+
+.Adquirir h2:hover{
+    color: white;
+    background-color: black;
+} */
+
 
 .Tendence{
     position: absolute;
-    top: 750px;
-    width: auto;
+    top: 880px;
+    width: 100%;
     float: left;
-    left: 40%;
     color: black;
+    /* background-color: gray; */
     text-align: center;
-    font-size: 40px;
-    background-color: transparent;
+    font-size: 35px;
     padding: 10px;
-    /* border: 1px solid black; */
-    /* box-shadow: 60px -16px black; */
 
    
+}
+
+.Tendence p{
+    position: relative;
+    float: left;
+    left: calc(46%);
+    color: white;
+    width: 130px;
+    text-align: center;
+    font-size: 18px;
+    background-color: black;
+    /* border: 2px solid white; */
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* box-shadow: 60px -16px black; */
+
 }
 
 
@@ -494,7 +577,7 @@ div, fieldset{
     position: absolute;
     float: left;
     left: 45px;
-    top: 850px;
+    top: 1720px;
     width: 1360px;
     height: 600px;
     overflow: hidden;
@@ -523,7 +606,7 @@ div, fieldset{
     width: auto;
     top: 400px;
     color: white;
-    background-color: rgba(37, 36, 36, 0.5);
+    background-color: black;
    
 }
 
@@ -572,26 +655,39 @@ div, fieldset{
     100% {margin-left: -400%;}
 }
 
-
-.Text-top{
+/* TENDENCIA */
+.Text-top{  
     position: absolute;
-    top: 1550px;
-    width: 100%;
+    top: 1570px;
+    left: 33%;
+    width: auto;
     height: 15%;
-    float: left;
-    left: 0;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     background-color: black;
+    border-radius: 20px;
     padding: 20px ;
+}
+
+.Text-top p{
+    position: absolute;
+    float: left;
+    left: 35%;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: white;
+    width: 150px;
+    cursor: pointer;
+    color: black;
 }
 
 
 .images1{
 
     position: relative;
-    top: 1000px;
+    top: 2500px;
     float: left;
     left: 0;
     width: 723.43px;
@@ -643,7 +739,7 @@ div, fieldset{
 .images2{
 
     position: relative;
-    top: 1000px;
+    top: 2500px;
     float: right;
     right: 0;
     width: 723.43px;
@@ -696,7 +792,7 @@ div, fieldset{
 .images3{
 
     position: relative;
-    top: 1000px;
+    top: 2500px;
     float: right;
     right: 0;
     width: 723.43px;
@@ -748,7 +844,7 @@ div, fieldset{
 .images4{
 
     position: relative;
-    top: 1000px;
+    top: 2500px;
     float: right;
     right: 0;
     width: 723.43px;
@@ -799,36 +895,45 @@ div, fieldset{
 }
 
 
-
-
-/* Style the footer */
- 
-/* .Who-are{
-
+.Temporade{
     position: absolute;
-    top: 2000px;
-    padding: 10px;
-    width: 100%;
+    top: 2350px;
+    width: auto;
+    height: auto;
     float: left;
-    left: 0;
+    padding: 1px 2px; /*ancho y alto */
+    left: 35%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: black;
-} */
+    font-size: 25px;
+    /* background-color: black; */
+    color: black;
+    
+}
 
 .About{
     position: absolute;
-    top: 3000px;
-    padding: 10px;
+    top: 3600px;
     width: 100%;
-    float: left;
-    left: 0;
+    height: 300px;
+    padding: 1px 2px; /*ancho y alto */
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    font-size: 25px;
     background-color: black;
     color: white;
+
 }
 
+.About h1{
+    position: absolute;
+    top: 50px;
+    float: left;
+    left: 40%;
+}
+
+.About p{
+    position: absolute;
+    top: 200px;
+    float: left;
+    left: 0;
+    font-size: 18px;
+}

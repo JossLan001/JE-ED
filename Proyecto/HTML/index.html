@@ -10,7 +10,7 @@
 
 <body>
 
-    <header>
+<header>
     <h2 class="logo">JS | ED </h2>
     <nav class="menu"> 
         <a href="/Proyecto/HTML/index.html">Inicio</a>
@@ -26,32 +26,35 @@
 
     <div class="form-box login">
         <h2>Login</h2>
-    <form action="#">
+    <form action="registro.php" name="" method="POST">
             <div class="input-box">
                 <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required>
+                <input type="email" name="email" required>
                 <label>Email</label>
+            </div> 
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" name="clave" required>
+                <label>Password</label>
             </div>
 
-    <div class="input-box">
-        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="password" required>
-        <label>Password</label>
-        </div>
-        <div class="remember-forgot">
-            <label> <input type="checkbox"> Remember me </label>
-            <a href="#">Forgot Password?</a>
-        </div>
-        <button type="submit" class="btn">Login</button>
-        <div class="login-register">
+            <div class="remember-forgot">
+                <label> <input type="checkbox"> Remember me </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn" name="login">Login</button>
+            <div class="login-register">
             <p>Don`t have an account? <a href="#" class="register-link">Register</a></p>
-        </div>
+            </div>
     </form>
     </div>
 
+
     <div class="form-box register">
         <h2>Registration</h2>
-    <form action="#">
+    <form action="registro.php" name="" method="POST">
 
         <div class="input-box">
             <span class="icon"><ion-icon name="person"></ion-icon></span>
@@ -83,8 +86,8 @@
     </form>
     </div>
 
-
 </div>
+
 <main>
 
         <div class="cajabuscar"><form method="get" id="buscarform">
@@ -95,7 +98,22 @@
                 <span class="icon-search"><ion-icon name="search-outline"></ion-icon></span>
                 <i class="search"></i>
             </fieldset>
-            </form></div>
+            </form>
+        </div>
+
+    
+
+          <video id="myVideo" muted autoplay>
+            <source src="/Pictures/Video1.mp4" type="video/mp4" autoplay >
+            <source src="/Pictures/Video2.mp4" type="video/mp4" autoplay muted >
+            <source src="/Pictures/Video3.mp4" type="video/mp4" autoplay muted >
+            </video>
+
+              <div class="Shop">
+                <p> Comprar</p>
+              </div>
+            
+
 
         <section>
             <div class="Home">
@@ -104,20 +122,53 @@
 
         </section>
 
+        
+        <!-- <div class="image">
+            
+            <img src="/Pictures/1.jpg" alt="">
+            
+            <img src="/Pictures/2.jpg" alt="">
+            
+            <img src="/Pictures/3.jpg" alt="">
+            
+            <img src="/Pictures/MEN/Playeras/4.jpg" alt="">
+        </div> -->
+        
         <section>
-            <div class="image">
-                <img src="/Pictures/1.jpg" alt="">
-                <img src="/Pictures/2.jpg" alt="">
-                <img src="/Pictures/3.jpg" alt="">
-                <img src="/Pictures/MEN/Playeras/4.jpg" alt="">
-                <br>
-                <br>
-            </div>
+            <div class="image-container">
+                <div class="image-item">
+                  <img src="/Pictures/MEN/Sudaderas/1.jpg" >
+                  <div class="overlay">
+                    <div class="text">Comprar</div>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="/Pictures/WOMAN/Chamarras/4.jpg" >
+                  <div class="overlay">
+                    <div class="text">Comprar</div>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="/Pictures/MEN/Chamarras/5.jpg" >
+                  <div class="overlay">
+                    <div class="text">Comprar</div>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="/Pictures/WOMAN/Chamarras/5.jpg" >
+                  <div class="overlay">
+                    <div class="text">Comprar</div>
+                  </div>
+                </div>
+              </div> 
         </section>
+
+       
 
         <section>
             <div class="Tendence">
-            <h3>TENDENCIA</h3>
+            <h3>Ultima coleccion</h3>
+            <p>Llevatelos</p>
             </div>
         </section>
 
@@ -126,7 +177,7 @@
             <div class="slider-box">
                 <ul>
                     <li>
-                        <img src="/Pictures/MEN/Calzado/2.jpg" alt="" >
+                        <img src="/Pictures/MEN/Chamarras/1.jpg" alt="" >
                         <div class="texto">
                         <h2>Botas</h2>
                         <p>
@@ -213,10 +264,11 @@
     
         <section>
             <div class="Text-top">
-            <h3>CLASICOS EN TENDENCIA</h3>
+            <h3>NUEVA TEMPORADA</h3>
+            <p>Consiguelos</p>
             </div>
         </section>
-<!--
+
         <section>
 
             <div class="images1"> 
@@ -270,14 +322,31 @@
         </section>
 
         <section>
-            <div class="About">
+            <div class="Temporade">
                 <br>
-                <h1>Acerca de nosotros</h1> <br>
-                
-               
+                <h1>CLASICOS EN TENDENCIA</h1> <br>
             </div>
             </section>
-</main> -->
+
+        <section>
+            <div class="About">
+                <h1>Acerca de nosotros</h1>
+
+                <p>JS Inc. Todos los derechos reservados
+
+                    Guías
+                    
+                    Términos de Uso
+                    
+                    Términos de Venta
+                    
+                    Detalles de la Empresa
+                    
+                    Política de Privacidad y Cookies</p>
+
+            </div>
+        </section>
+</main>
 
 
 <script src="/Proyecto/JS/script.js"></script>
